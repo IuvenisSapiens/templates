@@ -1,4 +1,4 @@
-#import "@preview/wonderous-book:0.1.1": book
+#import "@preview/wonderous-book:0.1.2": book
 
 #show: book.with(
   title: [Liam's Playlist],
