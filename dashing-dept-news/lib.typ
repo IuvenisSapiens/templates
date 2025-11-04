@@ -35,6 +35,10 @@
     ))
   )
 
+  // Configure document title
+  show std.title: upper
+  show std.title: set text(font: "Syne", size: 23pt, weight: 800)
+
   // Set the body font.
   set text(12pt, font: "Barlow")
 
@@ -89,7 +93,7 @@
     row-gutter: 32pt,
 
     // Title.
-    text(font: "Syne", 23pt, weight: 800, upper(title)),
+    std.title(),
 
     // Edition.
     text(fill: white, weight: "medium", 14pt, align(right + bottom, edition)),
