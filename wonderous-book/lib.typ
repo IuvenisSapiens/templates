@@ -53,11 +53,13 @@
   )
 
   // The first page.
-  page(align(center + horizon)[
-    #text(2em)[*#title*]
-    #v(2em, weak: true)
-    #text(1.6em, author)
-  ])
+  show std.title: set text(size: 22pt)
+  show std.title: strong
+  page(align(center + horizon, {
+    std.title()
+    v(2em, weak: true)
+    text(1.6em, author)
+  }))
 
   // Display publisher info at the bottom of the second page.
   if publishing-info != none {

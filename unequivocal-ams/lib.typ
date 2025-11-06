@@ -173,9 +173,10 @@
   })
 
   // Display the title and authors.
+  show std.title: set text(size: large-size, weight: 700)
   v(35pt, weak: true)
   align(center, upper({
-    text(size: large-size, weight: 700, title)
+    std.title()
     v(25pt, weak: true)
     text(size: footnote-size, author-string)
   }))
